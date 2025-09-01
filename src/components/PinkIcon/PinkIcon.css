@@ -1,0 +1,11 @@
+.pink-icon {
+  fill: #ec4899; /* Tailwind's pink-500 equivalent */
+  background-color: rgba(236, 72, 154, 0); /* Tailwind's pink-500/20 */
+  border-radius: 9999px; /* fully rounded */
+  padding: 0.25rem; /* p-1 */
+  margin-top: 0.25rem; /* mt-1 */
+  margin-right: 0.5rem; /* mr-2 */
+  width: 2rem; /* w-5 */
+  height: 2rem; /* h-5 */
+  flex-shrink: 0;
+}

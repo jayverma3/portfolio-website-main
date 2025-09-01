@@ -1,0 +1,10 @@
+.star-icon {
+  fill: rgb(236, 97, 72); /* Tailwind's pink-500 */
+  background-color: rgba(0, 0, 0, 0); /* pink-500/20 */
+  padding: 0.25rem; /* p-1 */
+  margin-top: 0.25rem; /* mt-1 */
+  margin-right: 0.5rem; /* mr-2 */
+  width: 2rem; /* w-5 */
+  height: 2rem; /* h-5 */
+  flex-shrink: 0;
+}

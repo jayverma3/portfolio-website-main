@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.contact-container-genz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  background: rgba(26, 26, 46, 0) ff;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-card-genz {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  max-width: 1100px;
+  width: 100%;
+  background: rgba(30, 30, 45, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.contact-info-genz {
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-title-genz {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.contact-subtitle-genz {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #c0c0c0;
+  margin-bottom: 30px;
+}
+
+.social-links-genz {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links-genz a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-links-genz a:hover {
+  transform: translateY(-5px);
+}
+
+.social-links-genz img {
+  width: 28px;
+  height: 28px;
+  filter: invert(0.8);
+}
+
+.contact-form-genz {
+  padding: 50px;
+}
+
+.form-group-genz {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.form-group-genz input,
+.form-group-genz textarea {
+  width: 100%;
+  padding: 12px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group-genz textarea {
+  resize: none;
+}
+
+.form-group-genz label {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.form-group-genz input:focus + label,
+.form-group-genz input:not(:placeholder-shown) + label,
+.form-group-genz textarea:focus + label,
+.form-group-genz textarea:not(:placeholder-shown) + label {
+  top: -20px;
+  font-size: 12px;
+  color: #e94560;
+}
+
+.form-group-genz input:focus,
+.form-group-genz textarea:focus {
+  border-bottom-color: #e94560;
+}
+
+.input-error {
+  border-bottom-color: #ff4b4b !important;
+}
+
+.error-msg-genz {
+  color: #ff4b4b;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}
+
+.form-error {
+  margin-bottom: 15px;
+}
+
+.submit-btn-genz {
+  width: 100%;
+  padding: 15px;
+  background: #e94560;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn-genz:hover {
+  background: #d43d51;
+  box-shadow: 0 5px 15px rgba(233, 69, 96, 0.4);
+}
+
+.thankyou-message-genz {
+  text-align: center;
+  color: #ffffff;
+}
+
+.thankyou-message-genz h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .contact-card-genz {
+    grid-template-columns: 1fr;
+  }
+  .contact-info-genz {
+    text-align: center;
+  }
+  .social-links-genz {
+    justify-content: center;
+  }
+}

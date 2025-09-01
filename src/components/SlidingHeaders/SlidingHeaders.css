@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
+
+.header-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #282c34; /* Neutral background */
+  color: white;
+  padding: 50px 20px; /* Ensure padding for smaller screens */
+  overflow: hidden;
+  font-family: "Unbounded", sans-serif;
+}
+
+/* Initial Animation State */
+.sliding-header {
+  opacity: 0; /* Start hidden */
+  transform: translateX(0); /* Reset position */
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+/* From Left */
+.slide-from-left {
+  transform: translateX(-150%); /* Start far left */
+}
+
+/* From Right */
+.slide-from-right {
+  transform: translateX(150%); /* Start far right */
+}
+
+/* Visible State */
+.sliding-header.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateX(0); /* Reset position */
+}
+
+/* Glow Effect */
+.sliding-header {
+  text-shadow: 0 0 5px #97148c, 0 0 15px #1605ff,
+    0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(94, 40, 221, 0.76);
+}
+
+/* Responsive Font Sizes */
+@media (max-width: 768px) {
+  .sliding-header {
+    font-size: 1.5rem; /* Smaller font for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .sliding-header {
+    font-size: 1.2rem; /* Further adjustment for very small screens */
+  }
+}

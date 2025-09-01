@@ -1,0 +1,106 @@
+[
+  {
+    "category": "Website",
+    "icon": "website-icon.svg",
+    "subcategories": [
+      {
+        "id": "website-1",
+        "title": "E-commerce Platform",
+        "description": "Developed a full-stack e-commerce platform with a custom CMS and payment gateway integration.",
+        "features": [
+          "Responsive design for all devices",
+          "Secure payment processing",
+          "Admin dashboard for product management",
+          "User authentication and profiles"
+        ],
+        "imageUrl": "src/assets/gptimages/hoodie_shop.webp",
+        "projectLink": "#"
+      },
+      {
+        "id": "website-2",
+        "title": "Portfolio Showcase",
+        "description": "A personal portfolio website to showcase my projects and skills. Built with React and designed for a clean and modern look.",
+        "features": [
+          "Interactive UI with animations",
+          "Contact form with email integration",
+          "Showcase of projects with filtering",
+          "Optimized for performance"
+        ],
+        "imageUrl": "src/assets/img1.jpg",
+        "projectLink": "#"
+      },
+      {
+        "id": "website-3",
+        "title": "Corporate Landing Page",
+        "description": "A sleek and professional landing page for a corporate client. Focused on brand identity and lead generation.",
+        "features": [
+          "SEO-friendly structure",
+          "Fast load times",
+          "Integration with CRM",
+          "A/B testing for conversion optimization"
+        ],
+        "imageUrl": "src/assets/blueriver2.jpg",
+        "projectLink": "#"
+      }
+    ]
+  },
+  {
+    "category": "ERP",
+    "icon": "erp-icon.svg",
+    "subcategories": [
+      {
+        "id": "erp-1",
+        "title": "Inventory Management System",
+        "description": "Designed and implemented an inventory management module for a larger ERP system. It tracks stock levels, orders, and deliveries.",
+        "features": [
+          "Real-time stock tracking",
+          "Automated reorder alerts",
+          "Barcode scanner integration",
+          "Reporting and analytics"
+        ],
+        "imageUrls": [
+          "src/assets/hackerimg.webp",
+          "src/assets/whiteblock.png",
+          "src/assets/blueriver2.jpg"
+        ],
+        "projectLink": "#"
+      },
+      {
+        "id": "erp-2",
+        "title": "Human Resources Module",
+        "description": "A comprehensive HR module that handles employee data, payroll, and attendance tracking. Built with a focus on data security and ease of use.",
+        "features": [
+          "Employee database with custom fields",
+          "Automated payroll processing",
+          "Leave and attendance management",
+          "Role-based access control"
+        ],
+        "imageUrls": [
+          "src/assets/img1.jpg",
+          "src/assets/gptimages/hoodie_shop.webp",
+          "src/assets/hackerimg.webp"
+        ],
+        "projectLink": "#"
+      }
+    ]
+  },
+  {
+    "category": "Personal",
+    "icon": "personal-icon.svg",
+    "subcategories": [
+      {
+        "id": "personal-1",
+        "title": "Task Management App",
+        "description": "A simple and intuitive task management app to help users organize their daily tasks. Features include drag-and-drop functionality and custom categories.",
+        "features": [
+          "Drag-and-drop task reordering",
+          "Customizable categories and tags",
+          "Due date reminders and notifications",
+          "Cross-platform synchronization"
+        ],
+        "imageUrl": "src/assets/whiteblock.png",
+        "projectLink": "#"
+      }
+    ]
+  }
+]

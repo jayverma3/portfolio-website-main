@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Boldonse&family=Bruno+Ace+SC&family=Cinzel:wght@400..900&family=Lexend+Deca:wght@100..900&family=Metal+Mania&family=Nabla:EDPT@104&family=Outfit&family=Quintessential&family=Righteous&family=Unbounded:wght@200..900&display=swap");
+
+.meteor-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 4vh;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(0.6rem, 2vw, 1.1rem); /* Adjusted for smaller screens */
+  line-height: 1.5;
+}
+
+.floating-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+  width: clamp(250px, 80%, 900px); /* Slightly smaller minimum */
+  padding: 1.2rem;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: clamp(0.6rem, 2.5vw, 1.1rem); /* More flexible font sizing */
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+  color: white;
+  opacity: 0;
+  transform: translateY(-50%) translateX(100%);
+  transition: opacity 1s ease, transform 1s ease;
+  animation: slideInFromRight 2s ease-out forwards;
+  box-sizing: border-box;
+}
+
+.floating-div.visible {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+}
+
+/* 👤 Round image */
+.bb-image {
+  border-radius: 50%;
+  width: clamp(80px, 18vw, 140px); /* Smaller min for tight screens */
+  height: clamp(80px, 18vw, 140px);
+  margin-bottom: 1rem;
+  object-fit: cover;
+  opacity: 0;
+  animation: slideInLeft 1s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+/* Divider */
+.bb-divider {
+  width: 80%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 1rem auto;
+  border-radius: 1px;
+}
+
+/* Meteor Animation */
+.meteor {
+  position: absolute;
+  opacity: 1;
+  z-index: 1;
+  /*border: 1px solid rgba(255, 255, 255, 0.5);*/
+  animation-name: fallMeteor;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  pointer-events: none;
+}
+.ff-p {
+  margin-bottom: clamp(0.4rem, 1.5vw, 0.8rem);
+  font-size: clamp(0.5rem, 2vw, 0.9rem);
+  line-height: 1.4;
+}
+
+.ff-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 clamp(0.6rem, 2vw, 1rem);
+  font-size: clamp(0.5rem, 2vw, 0.9rem);
+}
+
+.ff-li {
+  margin: clamp(0.2rem, 1.5vw, 0.4rem) 0;
+  display: flex;
+  align-items: center;
+}
+
+.ff-li::before {
+  content: "💡";
+  margin-right: 0.3rem;
+  font-size: clamp(0.6rem, 2vw, 1rem);
+}
+
+.ff-a {
+  color: #ffb3b3;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: clamp(0.5rem, 2vw, 0.9rem);
+}
+
+.ff-a:hover {
+  text-decoration: underline;
+}
+
+/* Animation keyframes */
+@keyframes fallMeteor {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(150vh) translateX(var(--drift));
+    opacity: 0;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%) translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}

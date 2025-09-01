@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Boldonse&family=Cinzel:wght@400..900&family=Metal+Mania&family=Nabla:EDPT@104&family=Outfit&family=Quintessential&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Boldonse&family=Bruno+Ace+SC&family=Cinzel:wght@400..900&family=Metal+Mania&family=Nabla:EDPT@104&family=Outfit&family=Quintessential&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Boldonse&family=Bruno+Ace+SC&family=Cinzel:wght@400..900&family=Metal+Mania&family=Nabla:EDPT@104&family=Outfit&family=Quintessential&family=Righteous&family=Unbounded:wght@200..900&display=swap");
+.twodiv-container {
+  padding: 15px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: auto;
+  border: 3px solid #ddd;
+}
+.twodiv-second-div {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  align-items: center; /* Center cards horizontally */
+  gap: 20px; /* Space between cards */
+  height: inherit; /* Full height for the container */
+  border: 4px solid rgba(255, 255, 255, 1); /* White border */
+  padding: 10px; /* Padding around the cards */
+}
+
+.twodiv-third-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Space out content and image */
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
+  border: 5px solid rgba(235, 235, 235, 0.8);
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+.twodiv-third-div {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.twodiv-third-div:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+.twodiv-third-div.visible {
+  opacity: 5;
+  transform: translateY(0);
+}
+.twodiv-content {
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  border: 5px solid rgba(255, 255, 255, 1);
+  position: relative;
+  overflow: hidden; /* Ensure the image doesn't show outside the container */
+}
+.dev-side,
+.bugger-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 200px;
+  gap: 20px;
+  color: #fff;
+  border: 5px solid rgba(255, 255, 255, 1);
+  font-family: "Righteous", sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.animated-image {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: -150px; /* Start off-screen */
+  transform: translateY(var(--translateY, -20%));
+  width: 100px; /* Adjust size as needed */
+  animation: slideIn 2s forwards; /* Animation defined below */
+}
+@keyframes slideIn {
+  from {
+    left: -150px; /* Starting position */
+  }
+  to {
+    left: var(--leftOffset, calc(30% - 10px)); /* Dynamic position */
+  }
+}
+
+/* Animation logic for dynamically assigned styles */
+.visible {
+  --leftOffset: attr(data-left-offset);
+  --translateY: attr(data-translate-y);
+}

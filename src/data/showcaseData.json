@@ -1,0 +1,114 @@
+{
+  "socialPosts": [
+    {
+      "id": "post-1",
+      "type": "image",
+      "thumbnail": "src/assets/img1.jpg",
+      "media": ["src/assets/img1.jpg"],
+      "user": {
+        "name": "PixelVibe",
+        "avatar": "src/assets/logos_pngs/react.png"
+      },
+      "date": "2025-07-15",
+      "caption": "Vibrant city lights. 🌃 #cityscape #nightlife #photography",
+      "likes": 1234,
+      "comments": 56,
+      "shares": 23
+    },
+    {
+      "id": "post-2",
+      "type": "carousel",
+      "thumbnail": "src/assets/blueriver2.jpg",
+      "media": ["src/assets/blueriver2.jpg", "src/assets/hackerimg.webp", "src/assets/whiteblock.png"],
+      "user": {
+        "name": "CreativeFlow",
+        "avatar": "src/assets/logos_pngs/Vite.js.png"
+      },
+      "date": "2025-07-12",
+      "caption": "Exploring the great outdoors. #nature #adventure #travel",
+      "likes": 2345,
+      "comments": 123,
+      "shares": 89
+    },
+    {
+      "id": "post-3",
+      "type": "video",
+      "thumbnail": "src/assets/vid_folder/bluewaves.mp4",
+      "media": ["src/assets/vid_folder/bluewaves.mp4"],
+      "user": {
+        "name": "MotionArt",
+        "avatar": "src/assets/logos_pngs/python.png"
+      },
+      "date": "2025-07-10",
+      "caption": "Ocean vibes. 🌊 #sea #waves #summer",
+      "likes": 3456,
+      "comments": 234,
+      "shares": 145
+    },
+    {
+      "id": "post-4",
+      "type": "image",
+      "thumbnail": "src/assets/hackerimg.webp",
+      "media": ["src/assets/hackerimg.webp"],
+      "user": {
+        "name": "CodeWizard",
+        "avatar": "src/assets/logos_pngs/typescript.png"
+      },
+      "date": "2025-07-08",
+      "caption": "Late night coding session. #developer #coding #tech",
+      "likes": 4567,
+      "comments": 345,
+      "shares": 210
+    }
+  ],
+  "logoDesigns": [
+    {
+      "id": "logo-1",
+      "title": "Dragon Logo",
+      "imageUrl": "src/assets/dragon.png",
+      "description": "A powerful and iconic logo for a gaming brand.",
+      "year": 2024
+    },
+    {
+      "id": "logo-2",
+      "title": "React Logo",
+      "imageUrl": "src/assets/logos_pngs/react.png",
+      "description": "A modern and dynamic logo for a tech startup.",
+      "year": 2023
+    },
+    {
+      "id": "logo-3",
+      "title": "Vite Logo",
+      "imageUrl": "src/assets/logos_pngs/Vite.js.png",
+      "description": "A clean and simple logo for a development tool.",
+      "year": 2023
+    },
+    {
+      "id": "logo-4",
+      "title": "Python Logo",
+      "imageUrl": "src/assets/logos_pngs/python.png",
+      "description": "A versatile logo for a data science company.",
+      "year": 2022
+    }
+  ],
+  "uiDesigns": [
+    {
+      "id": "ui-1",
+      "title": "Music App Concept",
+      "imageUrl": "src/assets/gptimages/hoodie_shop.webp",
+      "description": "A sleek and intuitive music player app design."
+    },
+    {
+      "id": "ui-2",
+      "title": "E-commerce Dashboard",
+      "imageUrl": "src/assets/img1.jpg",
+      "description": "A data-driven dashboard for an e-commerce platform."
+    },
+    {
+      "id": "ui-3",
+      "title": "Travel Booking App",
+      "imageUrl": "src/assets/blueriver2.jpg",
+      "description": "A user-friendly app for booking flights and hotels."
+    }
+  ]
+}

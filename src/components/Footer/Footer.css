@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Boldonse&family=Cinzel:wght@400..900&family=Metal+Mania&family=Nabla:EDPT@104&family=Outfit&family=Quintessential&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Boldonse&family=Bruno+Ace+SC&family=Cinzel:wght@400..900&family=Metal+Mania&family=Nabla:EDPT@104&family=Outfit&family=Quintessential&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Boldonse&family=Bruno+Ace+SC&family=Cinzel:wght@400..900&family=Metal+Mania&family=Nabla:EDPT@104&family=Outfit&family=Quintessential&family=Righteous&family=Unbounded:wght@200..900&display=swap");
+
+/* Footer Component Styling */
+.footer {
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  font-family: Outfit;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.9);
+  position: sticky;
+  height: 0%;
+}
+
+.fcopyright {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #bfbfbf;
+}
+
+.footer-content {
+  max-width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+  border-top: 1px solid #444;
+}
+
+.line {
+  width: 12px;
+  background-color: black;
+  height: 100%;
+  margin: 0 20px;
+}
+
+.finfo p {
+  margin: 3px 0;
+  color: #d3d3d3;
+  font-size: 19px;
+}
+
+.froute p {
+  margin: 5px 0;
+}
+
+.froute a {
+  color: #e7e7e7;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.froute a:hover {
+  color: #f5a623;
+}
+
+@media (max-width: 768px) {
+  .details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .line {
+    width: 80%;
+    height: 1px;
+    margin: 20px 0;
+  }
+}

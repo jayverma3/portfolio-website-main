@@ -1,0 +1,60 @@
+/* Splash screen styles */
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.splash-screen.fade-out {
+  opacity: 0;
+  transform: scale(1.1); /* Slight zoom-out effect */
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.splash-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+.splash-text {
+  position: relative;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: 1;
+  text-align: center;
+  animation: text-fade-in 1.5s ease-in-out;
+}
+
+/* Text fade-in animation */
+@keyframes text-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Main site content */
+.site-content {
+  display: block; /* Normal site content visibility */
+}

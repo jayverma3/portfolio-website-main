@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+.bb-meteor-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 4vh;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(0.6rem, 2vw, 1.1rem); /* Adjusted for smaller screens */
+  line-height: 1.5;
+}
+
+.bb-floating-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+  width: clamp(250px, 80%, 900px); /* Slightly smaller minimum */
+  padding: 1.2rem;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: clamp(0.6rem, 2.5vw, 1.1rem); /* More flexible font sizing */
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+  color: white;
+  opacity: 0;
+  transform: translateY(-50%) translateX(100%);
+  transition: opacity 1s ease, transform 1s ease;
+  animation: slideInFromRight 2s ease-out forwards;
+  box-sizing: border-box;
+}
+
+.bb-floating-div.bb-visible {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+}
+
+.bb-image {
+  border-radius: 50%;
+  width: clamp(60px, 20vw, 140px); /* Scalable image size */
+  height: clamp(60px, 20vw, 140px);
+  margin-bottom: clamp(0.4rem, 2vw, 1rem);
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  animation: bb-slideInLeft 1.2s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.bb-h1 {
+  font-size: clamp(
+    1rem,
+    4vw,
+    2rem
+  ); /* Reduced scaling for very small screens */
+  font-weight: 700;
+  color: #ff7a7a;
+  margin-bottom: clamp(0.4rem, 2vw, 0.8rem);
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.2);
+}
+
+.bb-divider {
+  width: clamp(50%, 70%, 70%);
+  height: 2px;
+  background: linear-gradient(to right, #ff7a7a, #ffb3b3);
+  margin: clamp(0.8rem, 3vw, 1.5rem) auto;
+  border-radius: 1px;
+}
+
+.bb-p {
+  margin-bottom: clamp(0.6rem, 2vw, 1rem);
+  font-size: clamp(0.7rem, 2.5vw, 1rem);
+  line-height: 1.6;
+}
+
+.bb-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 clamp(0.8rem, 2.5vw, 1.5rem);
+  font-size: clamp(0.7rem, 2.5vw, 1rem);
+}
+
+.bb-li {
+  margin: clamp(0.4rem, 2vw, 0.5rem) 0;
+  display: flex;
+  align-items: center;
+}
+
+.bb-li::before {
+  content: "💡";
+  margin-right: 0.4rem;
+  font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+}
+
+.bb-a {
+  color: #ffb3b3;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: clamp(0.7rem, 2vw, 1rem); /* Added scaling for links */
+}
+
+.bb-a:hover {
+  text-decoration: underline;
+}
+
+@keyframes bb-slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%) translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes bb-slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

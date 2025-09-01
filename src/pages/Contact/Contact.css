@@ -1,0 +1,24 @@
+.contact {
+  position: relative;
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between header, main content, and footer */
+}
+/* Background video styles */
+.home-background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire screen */
+  z-index: -1; /* Place the video behind content */
+}
+/* Subtitle styles */
+.stream {
+  color: rgb(70, 130, 180); /* Steel blue color */
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add subtle text shadow */
+  margin-top: 10px;
+}

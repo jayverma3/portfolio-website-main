@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+.ic-meteor-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 4vh;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(0.7rem, 2vw, 1.1rem);
+  line-height: 1.6;
+  perspective: 1000px;
+}
+
+.ic-floating-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+  width: clamp(280px, 85%, 950px);
+  padding: 1.5rem;
+  background: rgba(15, 15, 15, 0.75);
+  font-size: clamp(0.7rem, 2.5vw, 1.1rem);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  color: #f0f0f0;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 1s ease, transform 1s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.ic-floating-div.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ic-image {
+  border-radius: 50%;
+  width: clamp(80px, 18vw, 150px);
+  height: clamp(80px, 18vw, 150px);
+  margin-bottom: 1rem;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.ic-h1 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: 700;
+  color: #ff8c8c;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.ic-divider {
+  width: clamp(60%, 80%, 80%);
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ff8c8c, transparent);
+  margin: 1.2rem auto;
+  border: 0;
+}
+
+.ic-p {
+  margin-bottom: 1rem;
+  font-size: clamp(0.8rem, 2.2vw, 1rem);
+  line-height: 1.7;
+  color: #dcdcdc;
+}
+
+.ic-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  font-size: clamp(0.8rem, 2.2vw, 1rem);
+  text-align: left;
+}
+
+.ic-li {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.meteor {
+  position: absolute;
+  opacity: 1;
+  z-index: 1;
+  animation-name: fallMeteor;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  pointer-events: none;
+}
+
+@keyframes fallMeteor {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(150vh) translateX(var(--drift));
+    opacity: 0;
+  }
+}

@@ -83,11 +83,7 @@ const WorkTable = () => {
           {!isAnimating && (
             <div className="right-panel-content">
               <div className="media-container">
-                {activeSubcategory.imageUrls ? (
-                  <ImageSlider images={activeSubcategory.imageUrls} />
-                ) : (
-                  <img src={activeSubcategory.imageUrl} alt={activeSubcategory.title} className="work-image" />
-                )}
+                <ImageSlider images={activeSubcategory.imageUrls} />
               </div>
               <div className="work-details">
                 <h2>{activeSubcategory.title}</h2>

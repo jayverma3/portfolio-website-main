@@ -1,6 +1,17 @@
 .home-v2 {
   position: relative;
+  color: white;
+  overflow-x: hidden;
 }
+
+.info-cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
 
 .home-background-video-v2 {
   position: fixed;

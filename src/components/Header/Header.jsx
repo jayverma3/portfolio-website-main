@@ -59,11 +59,15 @@ const Header = () => {
 
         <nav className={`nav-v2 ${isMenuOpen ? "is-open" : ""}`}>
           <ul className="nav-list-v2">
-            <NavLink sectionId="about" onClick={closeMenu}>About</NavLink>
-            <NavLink sectionId="contact" onClick={closeMenu}>Contact</NavLink>
+            <NavLink sectionId="about" onClick={closeMenu}>
+              About
+            </NavLink>
+            <NavLink sectionId="contact" onClick={closeMenu}>
+              Contact
+            </NavLink>
             <motion.li whileHover={{ scale: 1.1 }}>
               <a href="#contact" className="hire-me-btn" onClick={closeMenu}>
-                Hire Me
+                ⌯⌲
               </a>
             </motion.li>
           </ul>

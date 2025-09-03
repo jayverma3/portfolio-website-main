@@ -8,16 +8,19 @@
   color: #ffffff;
   padding: 10px 0;
   text-align: center;
-  font-family: Outfit;
+  font-family: "Be Vietnam Pro", sans-serif;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.9);
   position: sticky;
   height: 0%;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
 }
 
 .fcopyright {
   margin-bottom: 10px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #bfbfbf;
+  text-transform: uppercase;
 }
 
 .footer-content {

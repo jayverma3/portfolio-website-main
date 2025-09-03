@@ -1,45 +1,69 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "./SlideIn.css";
-import back from "../../assets/vid_folder/purplewaves.mp4";
+
 const SlideIn = ({ mainText, subText }) => {
-  const [isVisible, setIsVisible] = useState(false);
-  const containerRef = useRef(null);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.3,
       },
-      { threshold: 0.5 } // Trigger animation when 50% of the component is visible
-    );
+    },
+  };
 
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
-    }
+  const itemVariants = {
+    hidden: { y: 50, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut",
+      },
+    },
+  };
 
-    return () => {
-      if (containerRef.current) {
-        observer.unobserve(containerRef.current);
-      }
-    };
-  }, []);
+  const lineVariants = {
+    hidden: { scaleX: 0 },
+    visible: {
+      scaleX: 1,
+      transition: {
+        duration: 1,
+        ease: [0.6, 0.05, -0.01, 0.9],
+        delay: 0.5,
+      },
+    },
+  };
 
   return (
-    <div className="slidein-background">
-      <div
-        className={`slide-in-container ${isVisible ? "visible" : ""}`}
-        ref={containerRef}
-      >
-        <h1 className={`slide-in-h1 ${isVisible ? "visible" : ""}`}>
-          {mainText}
-        </h1>
-        <h2 className={`slide-in-h2 ${isVisible ? "visible" : ""}`}>
+    <motion.div
+      ref={ref}
+      className="slide-in-container-v2"
+      variants={containerVariants}
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+    >
+      <motion.h1 className="slide-in-main-text" variants={itemVariants}>
+        {mainText}
+      </motion.h1>
+      {subText && (
+        <motion.h2 className="slide-in-sub-text" variants={itemVariants}>
           {subText}
-        </h2>
-      </div>
-    </div>
+        </motion.h2>
+      )}
+      <motion.div
+        className="divider-line"
+        variants={lineVariants}
+        style={{ transformOrigin: "center" }}
+      />
+    </motion.div>
   );
 };
 

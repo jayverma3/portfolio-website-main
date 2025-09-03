@@ -1,19 +1,28 @@
 [
   {
-    "category": "Website",
+    "category": "Website's",
     "icon": "website-icon.svg",
     "subcategories": [
       {
         "id": "website-1",
-        "title": "E-Commerce Services for Home Cleaning",
-        "description": "Developed a full-stack e-commerce platform with a custom CMS and payment gateway integration.",
+        "title": "Professional Home Cleaning Services",
+        "description": "Designed and developed a modern platform to easily book and manage home cleaning services with real-time scheduling and secure payments.",
         "features": [
-          "Responsive design for all devices",
-          "Secure payment processing",
-          "Admin dashboard for product management",
-          "User authentication and profiles"
+          "Mobile-friendly responsive design",
+          "Online booking and scheduling system",
+          "Secure payment integration",
+          "Customer profiles with service history",
+          "Admin dashboard for managing bookings and staff"
         ],
-        "imageUrl": "src/assets/gptimages/hoodie_shop.webp",
+
+        "imageUrls": [
+          "src/assets/website-work/g1servicewebsite_images/Screenshot 2025-09-01 155537.png",
+          "src/assets/website-work/g1servicewebsite_images/Screenshot 2025-09-01 155618.png",
+          "src/assets/website-work/g1servicewebsite_images/Screenshot 2025-09-01 155635.png",
+          "src/assets/website-work/g1servicewebsite_images/Screenshot 2025-09-01 155726.png",
+          "src/assets/website-work/g1servicewebsite_images/Screenshot 2025-09-01 155813.png",
+          "src/assets/website-work/g1servicewebsite_images/Screenshot 2025-09-01 155847.png"
+        ],
         "projectLink": "#"
       },
       {
@@ -26,7 +35,7 @@
           "Showcase of projects with filtering",
           "Optimized for performance"
         ],
-        "imageUrl": "src/assets/img1.jpg",
+        "imageUrls": ["src/assets/img1.jpg"],
         "projectLink": "#"
       },
       {
@@ -39,7 +48,11 @@
           "Integration with CRM",
           "A/B testing for conversion optimization"
         ],
-        "imageUrl": "src/assets/blueriver2.jpg",
+        "imageUrls": [
+          "src/assets/hackerimg.webp",
+          "src/assets/whiteblock.png",
+          "src/assets/blueriver2.jpg"
+        ],
         "projectLink": "#"
       }
     ]
@@ -98,7 +111,7 @@
           "Due date reminders and notifications",
           "Cross-platform synchronization"
         ],
-        "imageUrl": "src/assets/whiteblock.png",
+        "imageUrls": ["src/assets/whiteblock.png"],
         "projectLink": "#"
       }
     ]

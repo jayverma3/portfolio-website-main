@@ -1,8 +1,20 @@
-import React from 'react';
-import './ScrollingWords.css';
+import React from "react";
+import "./ScrollingWords.css";
 
 const words = [
-  'React', 'JavaScript', 'Node.js', 'Express', 'MongoDB', 'CSS3', 'HTML5', 'Python', 'TypeScript', 'Next.js', 'Vite', 'PHP', 'MySQL'
+  "Full Stack Developer",
+  "JavaScript",
+  "Node.js",
+  "Express",
+  "MongoDB",
+  "CSS3",
+  "HTML5",
+  "Python",
+  "TypeScript",
+  "Next.js",
+  "Vite",
+  "PHP",
+  "MySQL",
 ];
 
 const ScrollingWords = () => {

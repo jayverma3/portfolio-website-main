@@ -41,7 +41,7 @@
       {
         "id": "website-3",
         "title": "Corporate Landing Page",
-        "description": "A sleek and professional landing page for a corporate client. Focused on brand identity and lead generation.",
+        "description": "Creating a sleek and professional landing page for a corporate client. Focused on brand identity and lead generation through Visual Identity Design (VidID).",
         "features": [
           "SEO-friendly structure",
           "Fast load times",
@@ -49,9 +49,9 @@
           "A/B testing for conversion optimization"
         ],
         "imageUrls": [
-          "src/assets/hackerimg.webp",
-          "src/assets/whiteblock.png",
-          "src/assets/blueriver2.jpg"
+          "src/assets/Stock images/Research2.jpg",
+          "src/assets/Stock images/planning.jpg",
+          "src/assets/Stock images/developing_webstite_security.webp"
         ],
         "projectLink": "#"
       }
@@ -63,35 +63,41 @@
     "subcategories": [
       {
         "id": "erp-1",
-        "title": "Inventory Management System",
-        "description": "Designed and implemented an inventory management module for a larger ERP system. It tracks stock levels, orders, and deliveries.",
+        "title": "Full ERP System Setup",
+        "description": "Setting up a complete ERP system for a Company Customized as per there requirements. Using In-house Server or Cloud Storage",
         "features": [
           "Real-time stock tracking",
           "Automated reorder alerts",
           "Barcode scanner integration",
-          "Reporting and analytics"
+          "Reporting and analytics",
+          "Integration with CRM",
+          "Relationship management",
+          "Customizable workflows"
         ],
         "imageUrls": [
-          "src/assets/hackerimg.webp",
-          "src/assets/whiteblock.png",
-          "src/assets/blueriver2.jpg"
+          "src/assets/Stock images/HumanresourceERPNEXT.png",
+          "src/assets/Stock images/WebsitestatsERPNEXT.png",
+          "src/assets/Stock images/ERPNEXT2.png"
         ],
         "projectLink": "#"
       },
       {
         "id": "erp-2",
-        "title": "Human Resources Module",
-        "description": "A comprehensive HR module that handles employee data, payroll, and attendance tracking. Built with a focus on data security and ease of use.",
+        "title": "ERP Details",
+        "description": "A comprehensive, open-source enterprise management platform that integrates accounting, HR, inventory, sales, purchasing, projects, and manufacturing in a single system.",
         "features": [
-          "Employee database with custom fields",
+          "Role-based dashboards",
+          "Customizable workflows",
+          "Real-time data insights",
+          "Supports multi-company, multi-currency, and multi-language environments",
+          "Employee database with custom fields ",
           "Automated payroll processing",
           "Leave and attendance management",
           "Role-based access control"
         ],
         "imageUrls": [
-          "src/assets/img1.jpg",
-          "src/assets/gptimages/hoodie_shop.webp",
-          "src/assets/hackerimg.webp"
+          "src/assets/Stock images/ERPNEXT.jpg",
+          "src/assets/Stock images/ERPNextHome.png"
         ],
         "projectLink": "#"
       }

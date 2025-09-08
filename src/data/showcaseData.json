@@ -2,9 +2,9 @@
   "socialPosts": [
     {
       "id": "post-1",
-      "type": "image",
-      "thumbnail": "src/assets/img1.jpg",
-      "media": ["src/assets/img1.jpg"],
+      "type": "video",
+      "thumbnail": "src/assets/vid_folder/purplestars.mp4",
+      "media": ["src/assets/vid_folder/purplestars.mp4"],
       "user": {
         "name": "PixelVibe",
         "avatar": "src/assets/logos_pngs/react.png"
@@ -19,7 +19,11 @@
       "id": "post-2",
       "type": "carousel",
       "thumbnail": "src/assets/blueriver2.jpg",
-      "media": ["src/assets/blueriver2.jpg", "src/assets/hackerimg.webp", "src/assets/whiteblock.png"],
+      "media": [
+        "src/assets/blueriver2.jpg",
+        "src/assets/hackerimg.webp",
+        "src/assets/whiteblock.png"
+      ],
       "user": {
         "name": "CreativeFlow",
         "avatar": "src/assets/logos_pngs/Vite.js.png"
@@ -101,7 +105,7 @@
     {
       "id": "ui-2",
       "title": "E-commerce Dashboard",
-      "imageUrl": "src/assets/img1.jpg",
+      "imageUrl": "src/assets/Stock images/ERPNEXT.jpg",
       "description": "A data-driven dashboard for an e-commerce platform."
     },
     {

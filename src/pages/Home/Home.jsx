@@ -85,6 +85,12 @@ const fullStackData = {
     {
       title: "Tech Stack Expertise:",
       items: [
+        "Basic Website 1–5 pages, responsive, contact form",
+        "Standard Website 5–10 pages, blog, SEO setup",
+        "Premium Website 10+ pages, custom design, animations",
+        "Basic E-commerce Shopify/WooCommerce, 50 products",
+        "Standard E-commerce 500 products, CRM, custom design",
+        "Premium E-commerce Marketplace, subscriptions, API integration",
         "Frontend: React, Next.js, Vue, HTML5, CSS3, Tailwind, Sass, TypeScript, Framer Motion",
         "Backend: Node.js, Express, Python (FastAPI/Django), PHP (Laravel), Java, REST & GraphQL APIs",
         "Database: MongoDB, PostgreSQL, MySQL, Firebase, Redis",
@@ -180,7 +186,13 @@ const Home = () => {
   return (
     <div className="home-v2">
       {showSplash && <SplashScreen />}
-      <video autoPlay muted loop playsInline className="home-background-video-v2">
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="home-background-video-v2"
+      >
         <source src={backgroundvid} type="video/mp4" />
       </video>
       <Header />
@@ -189,9 +201,15 @@ const Home = () => {
         <Section>
           <ImageAndName startAnimation={!showSplash} />
         </Section>
+        <Section fullWidth>
+          <ScrollingWords />
+        </Section>
         <div id="about">
           <Section>
-            <SlideIn mainText="My Journey" subText="Transforming Code into Reality" />
+            <SlideIn
+              mainText="My Journey"
+              subText="Transforming Code into Reality"
+            />
             <Journey />
           </Section>
           <Section>
@@ -213,9 +231,6 @@ const Home = () => {
         </Section>
         <Section>
           <Upcomingcomponent />
-        </Section>
-        <Section fullWidth>
-          <ScrollingWords />
         </Section>
         <div id="contact">
           <Section fullWidth>

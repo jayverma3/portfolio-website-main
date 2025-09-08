@@ -59,7 +59,7 @@
 .ic-h1 {
   font-size: clamp(1.5rem, 5vw, 2.5rem);
   font-weight: 700;
-  color: #ff8c8c;
+  color: #e94560;
   margin-bottom: 0.5rem;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }

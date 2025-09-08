@@ -12,17 +12,20 @@ const Journeydiv = () => {
     },
     {
       year: "2017-2018",
-      education: "Gujarat State Board of Higher Secondary Education (GSEB), Ahmedabad",
+      education:
+        "Gujarat State Board of Higher Secondary Education (GSEB), Ahmedabad",
       qualification: "12th Commerce",
     },
     {
       year: "2018-2022",
-      education: "Integrated Masters in Computer Application (IMCA), From RB Shastri College under Gujarat Technology University(GTU), Ahmedabad",
+      education:
+        "Integrated Masters in Computer Application (IMCA), From RB Shastri College under Gujarat Technology University(GTU), Ahmedabad",
       qualification: "Bachelor's Degree (BCA)",
     },
     {
       year: "2022-2025",
-      education: "Integrated Masters in Computer Application (IMCA), From RB Shastri College under Gujarat Technology University(GTU), Ahmedabad",
+      education:
+        "Integrated Masters in Computer Application (IMCA), From RB Shastri College under Gujarat Technology University(GTU), Ahmedabad",
       qualification: "Master's Degree (MCA)",
     },
     {
